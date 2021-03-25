@@ -9,56 +9,54 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit()"
+      autocomplete="off"
+    >
       <fieldset class="form__fieldset">
         <legend>Personal information</legend>
-        <label class="form__field" for="PI/Surname">
+        <label class="form__field" for="PI-Surname">
           Surname:
           <input
-            id="PI/Surname"
-            class="form__input"
-            name="PI/Surname"
+            id="PI-Surname"
+            name="PI-Surname"
             type="text"
-            autocomplete="off"
             required>
         </label>
-        <label class="form__field" for="PI/Name">
+        <label class="form__field" for="PI-Name">
           Name:
           <input
-            id="PI/Name"
-            class="form__input"
-            name="PI/Name"
-            autocomplete="off"
+            id="PI-Name"
+            name="PI-Name"
             type="text"
             required>
         </label>
-        <label class="form__field" for="PI/Age">
+        <label class="form__field" for="PI-Age">
           How old are You?
           <input
-            id="PI/Age"
-            class="form__input"
-            name="PI/Age"
+            id="PI-Age"
+            name="PI-Age"
             type="number"
             value="12"
             min="1"
             max="150"
             required>
         </label>
-        <label class="form__field" for="PI/Birthday">
+        <label class="form__field" for="PI-Birthday">
           Full date of birth:
           <input
-            id="PI/Birthday"
-            class="form__input"
-            name="PI/Birthday"
+            id="PI-Birthday"
+            name="PI-Birthday"
             type="date"
             required>
         </label>
-        <label class="form__field" for="PI/Accept">
+        <label class="form__field" for="PI-Accept">
           I accept the term of the agreement
           <input
-            id="PI/Accept"
-            class="form__input"
-            name="PI/Accept"
+            id="PI-Accept"
+            name="PI-Accept"
             type="checkbox"
             required>
         </label>
@@ -66,25 +64,23 @@
 
       <fieldset class="form__fieldset">
         <legend>Registration</legend>
-        <label class="form__field" for="Reg/email">
+        <label class="form__field" for="Reg-email">
           E-mail:
           <input
-            id="Reg/email"
+            id="Reg-email"
             type="email"
-            name="Reg/email"
-            class="form__input"
+            name="Reg-email"
             placeholder="email@example.com"
             required>
         </label>
-        <label class="form__field" for="Reg/password">
+        <label class="form__field" for="Reg-password">
           Password:
           <input
-            id="Reg/password"
-            name="Reg/password"
+            id="Reg-password"
+            name="Reg-password"
             type="password"
             maxlength="32"
             minlength="6"
-            class="form__input"
             required>
         </label>
       </fieldset>
@@ -93,46 +89,45 @@
         <legend>An interesting fact about you!</legend>
         <div class="form__field">
           Do you love cats?
-          <label for="Facts/cats/yes">
+          <label for="Facts-cats-yes">
             Yes
             <input
-              id="Facts/cats/yes"
-              name="Facts/cats"
+              id="Facts-cats-yes"
+              name="Facts-cats"
               type="radio"
-              class="form__input"
               value="yes">
           </label>
-          <label for="Facts/cats/no">
+          <label for="Facts-cats-no">
             No
             <input
-              id="Facts/cats/no"
-              name="Facts/cats"
+              id="Facts-cats-no"
+              name="Facts-cats"
               type="radio"
               value="no"
-              class="form__input">
+              >
           </label>
         </div>
-        <label class="form__field" for="Facts/color">
+        <label class="form__field" for="Facts-color">
           What is your favorite color?
           <input
-            id="Facts/color"
-            name="Facts/color"
+            id="Facts-color"
+            name="Facts-color"
             type="color"
-            class="form__input">
+            >
         </label>
-        <label class="form__field" for="Facts/time">
+        <label class="form__field" for="Facts-time">
           What time do you go to bed?
           <input
-            id="Facts/time"
-            name="Facts/time"
+            id="Facts-time"
+            name="Facts-time"
             type="time"
-            class="form__input">
+            >
         </label>
-        <label class="form__field" for="Facts/car">
+        <label class="form__field" for="Facts-car">
           What are your favorite brand of cars?
           <select
-            name="Facts/car"
-            id="Facts/car"
+            name="Facts-car"
+            id="Facts-car"
             multiple
           >
             <option value="BMV">BMV</option>
@@ -140,37 +135,34 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="form__field" for="Facts/rate">
+        <label class="form__field" for="Facts-rate">
           How do you rate our work?
           <input
-            id="Facts/rate"
-            name="Facts/rate"
+            id="Facts-rate"
+            name="Facts-rate"
             type="range"
-            class="form__input"
             value="0">
         </label>
       </fieldset>
 
       <fieldset class="form__fieldset">
         <legend>Additional info</legend>
-        <label class="form__field" for="Info/comment">
+        <label class="form__field" for="Info-comment">
           Comments:
           <textarea
-            id="Info/comment"
-            autocomplete="off"
-            class="form__input"
-            name="Info/comment">
+            id="Info-comment"
+            name="Info-comment">
           </textarea>
         </label>
-        <label class="form__field" for="Info/recommendation">
+        <label class="form__field" for="Info-recommendation">
           Would you recommend us?
-          <select name="Info/recommendation" id="Info/recommendation">
+          <select name="Info-recommendation" id="Info-recommendation">
             <option value="yes">yes</option>`
             <option value="no">no</option>
           </select>
         </label>
       </fieldset>
-      <button type="submit" onsubmit="onSubmit()">Submit</button>
+      <button type="submit">Submit</button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
